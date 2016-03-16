@@ -24,6 +24,8 @@ Download vismatrix into **~/pkg/vismatrix**
 
 In Ubuntu/Debian:
 ```
+sudo apt-get install freeglut3-dev libxmu-dev libxi-dev
+
 mkdir -p ~/pkg/build_vismatrix
 cd ~/pkg/build_vismatrix
 ccmake ~/pkg/vismatrix
