@@ -20,16 +20,24 @@ To Professor David Gleich for this wonderful tool.
 
 ## Installation
 
-Download vismatrix into **~/xpkg/vismatrix**
-
-In Ubuntu/Debian:
+Install dependencies:
 ```
-sudo apt-get install freeglut3-dev libxmu-dev libxi-dev cmake-curses-gui
+sudo apt-get install freeglut3-dev libxmu-dev libxi-dev libz-dev g++ make cmake
+```
 
-mkdir -p ~/xpkg/build_vismatrix
-cd ~/xpkg/build_vismatrix
-ccmake ~/xpkg/vismatrix
-[c] [c] [g]
+Download the code into `/tmp/vismatrix`:
+```
+git clone --depth 1 https://github.com/cpmech/vismatrix.git /tmp/vismatrix
+```
+
+Compile the code in Debian/Ubuntu Linux:
+```
+cd /tmp/vismatrix/src
+cmake -Wno-dev .
 make
+```
+
+The executable file will be `/tmp/vismatrix/src/vismatrix` and you may install into `/usr/local/bin` with:
+```
 sudo make install
 ```
