@@ -30,14 +30,14 @@ Download the code into `/tmp/vismatrix`:
 git clone --depth 1 https://github.com/cpmech/vismatrix.git /tmp/vismatrix
 ```
 
-Compile the code in Debian/Ubuntu Linux:
+Compile the code in Debian/Ubuntu Linux (tested on `Ubuntu 20.04.1 LTS`):
 ```
 cd /tmp/vismatrix/src
 cmake -Wno-dev .
 make
 ```
 
-The executable file will be `/tmp/vismatrix/src/vismatrix` and you may install into `/usr/local/bin` with:
+The executable file will be `/tmp/vismatrix/src/vismatrix` and you may install into `/usr/local/bin` by using:
 ```
 sudo make install
 ```
