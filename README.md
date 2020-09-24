@@ -66,3 +66,9 @@ Usage:
 ```
 vismatrix /tmp/vismatrix/example.smat
 ```
+
+Some commands:
+- mouse move: pan
+- shift + mouse: zoom
+- control + click: inspect value
+- right-click: options
