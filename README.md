@@ -7,16 +7,23 @@ Vismatrix is a nice tool to visualize sparse matrices in (.smat) format
 <p><img src="figs/fig02.png" width="400"></p>
 </div>
 
+## Acknowledgements
+
+To [Professor David Gleich](https://github.com/dgleich) for this wonderful tool.
+
 ## License
+
+```
+------------------------------------------------------------
+vismatrix 2.0 
+------------------------------------------------------------
+Copyright David Gleich, Leonid Zhukov, 2006-2007.
+```
 
 Unless otherwise noted, the source files are distributed under the BSD-style license found in the
 LICENSE file.
 
 See also LICENSE files in each one of the subdirectories 'boost', 'glui', and 'tclap'.
-
-## Acknowledgements
-
-To Professor David Gleich for this wonderful tool.
 
 ## Installation
 
@@ -40,4 +47,22 @@ make
 **4** The executable file will be `/tmp/vismatrix/src/vismatrix` and you may install into `/usr/local/bin` by using:
 ```
 sudo make install
+```
+
+## Usage
+
+The matrix input file is quite simple (0-index based):
+```
+m n nnz
+i j x
+...
+i j x
+```
+where the first line has `m` as the number of rows, `n` as the number of columns, and `nnz` as the number of non-zero values. The following lines contain the index of row `i` and column `j` of the non-zero entry `x`.
+
+See [example.smat](https://github.com/cpmech/vismatrix/blob/master/example.smat) file.
+
+Usage:
+```
+vismatrix /tmp/vismatrix/example.smat
 ```
