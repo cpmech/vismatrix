@@ -2,9 +2,9 @@
 
 <img src="figs/fig00a.png">
 
-![](docs/vismatrix00.gif)
+![](figs/vismatrix00.gif)
 
-![](docs/vismatrix01.gif)
+![](figs/vismatrix01.gif)
 
 <img src="figs/fig00b.png">
 
