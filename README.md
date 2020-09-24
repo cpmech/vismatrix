@@ -1,11 +1,14 @@
 # Vismatrix &ndash; Visualization of sparse matrices
 
-Vismatrix is a nice tool to visualize sparse matrices in (.smat) format
+<img src="figs/fig00a.png">
 
-<div id="container">
-<p><img src="figs/fig01.png" width="400"></p>
-<p><img src="figs/fig02.png" width="400"></p>
-</div>
+![](docs/vismatrix00.gif)
+
+![](docs/vismatrix01.gif)
+
+<img src="figs/fig00b.png">
+
+Vismatrix is a nice tool to visualize sparse matrices in (.smat) format
 
 ## Acknowledgements
 
@@ -72,3 +75,7 @@ Some commands:
 - shift + mouse: zoom
 - control + click: inspect value
 - right-click: options
+
+<img src="figs/fig01.png" width="400">
+
+<img src="figs/fig02.png" width="400">
