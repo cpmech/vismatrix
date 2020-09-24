@@ -24,16 +24,16 @@ Copyright David Gleich, Leonid Zhukov, 2006-2007.
 Unless otherwise noted, the source files are distributed under the BSD-style license found in the
 LICENSE file.
 
-See also LICENSE files in each one of the subdirectories 'boost', 'glui', and 'tclap'.
+See also LICENSE files in each one of the subdirectories boost, glui, and tclap.
 
 ## Installation
 
-**1** Install dependencies (tested on `Ubuntu 20.04.1 LTS`):
+**1** Install dependencies (tested on **Ubuntu 20.04.1 LTS**):
 ```
 sudo apt-get install freeglut3-dev libxmu-dev libxi-dev libz-dev g++ make cmake
 ```
 
-**2** Download the code into `/tmp/vismatrix`:
+**2** Download the code into /tmp/vismatrix:
 ```
 git clone --depth 1 https://github.com/cpmech/vismatrix.git /tmp/vismatrix
 ```
@@ -45,7 +45,7 @@ cmake -Wno-dev .
 make
 ```
 
-**4** The executable file will be `/tmp/vismatrix/src/vismatrix` and you may install into `/usr/local/bin` by using:
+**4** The executable file will be /tmp/vismatrix/src/vismatrix and you may install into /usr/local/bin by using:
 ```
 sudo make install
 ```
@@ -59,7 +59,7 @@ i j x
 ...
 i j x
 ```
-where the first line has `m` as the number of rows, `n` as the number of columns, and `nnz` as the number of non-zero values. The following lines contain the index of row `i` and column `j` of the non-zero entry `x`.
+where the first line has _m_ as the number of rows, _n_ as the number of columns, and _nnz_ as the number of non-zero values. The following lines contain the index of row _i_ and column _j_ of the non-zero entry _x_.
 
 See [example.smat](https://github.com/cpmech/vismatrix/blob/master/example.smat) file.
 
