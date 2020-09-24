@@ -2,9 +2,9 @@
 
 <img src="figs/fig00a.png">
 
-![](figs/vismatrix01.gif)
+<img src="figs/fig00b.png">
 
-![](figs/vismatrix02.gif)
+![](figs/vismatrix01.gif)
 
 Vismatrix is a nice tool to visualize sparse matrices in (.smat) format
 
@@ -74,7 +74,7 @@ Some commands:
 - control + click: inspect value
 - right-click: options
 
-<img src="figs/fig00b.png">
+![](figs/vismatrix02.gif)
 
 <img src="figs/fig01.png" width="400">
 
