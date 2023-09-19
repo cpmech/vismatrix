@@ -28,51 +28,58 @@ See also LICENSE files in each one of the subdirectories boost, glui, and tclap.
 
 ## Installation
 
-**1** Install dependencies (tested on **Ubuntu 20.04.1 LTS**):
+**1** Install dependencies (tested on **Ubuntu 23.04 LTS**):
+
 ```
 sudo apt-get install freeglut3-dev libxmu-dev libxi-dev libz-dev g++ make cmake
 ```
 
 **2** Download the code into /tmp/vismatrix:
+
 ```
 git clone --depth 1 https://github.com/cpmech/vismatrix.git /tmp/vismatrix
 ```
 
-**3** Compile the code:
+**3** Compile the code (in /tmp/build-vismatrix):
+
 ```
-cd /tmp/vismatrix/src
-cmake -Wno-dev .
-make
+./all.bash
 ```
 
-**4** The executable file will be /tmp/vismatrix/src/vismatrix and you may install into /usr/local/bin by using:
+**4** The executable file will be /tmp/build-vismatrix and you may install into /usr/local/bin by using:
+
 ```
-sudo make install
+sudo cp /tmp/build-vismatrix/vismatrix /usr/local/bin/
 ```
 
 ## Usage
 
 The matrix input file is quite simple (0-index based):
+
 ```
 m n nnz
 i j x
 ...
 i j x
 ```
+
 where the first line has _m_ as the number of rows, _n_ as the number of columns, and _nnz_ as the number of non-zero values. The following lines contain the index of row _i_ and column _j_ of the non-zero entry _x_.
 
 See [example.smat](https://github.com/cpmech/vismatrix/blob/master/example.smat) file.
 
 Usage:
+
 ```
-vismatrix /tmp/vismatrix/example.smat
+vismatrix example.smat
 ```
 
 Some commands:
-- mouse move: pan
-- shift + mouse: zoom
-- control + click: inspect value
-- right-click: options
+
+* right-click to Exit
+* mouse move: pan
+* shift + mouse: zoom
+* control + click: inspect value
+* right-click: options
 
 ![](figs/vismatrix02.gif)
 
