@@ -8,6 +8,13 @@
 
 Vismatrix is a nice tool to visualize sparse matrices in (.smat) format
 
+## Installation (Ubuntu/Linux)
+
+```bash
+sudo apt install libgl1-mesa-dev libglut-dev
+bash all.bash
+```
+
 ## Acknowledgements
 
 To [Professor David Gleich](https://github.com/dgleich) for this wonderful tool.
