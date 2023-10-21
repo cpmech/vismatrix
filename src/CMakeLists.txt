@@ -1,5 +1,5 @@
+cmake_minimum_required(VERSION 3.25)
 PROJECT(VISMATRIX)
-cmake_minimum_required(VERSION 3.16)
 
 
 SET(CMAKE_VERBOSE_MAKEFILE FALSE)
