@@ -1,7 +1,7 @@
 name: Compile Vismatrix
 on: [pull_request, push]
 jobs:
-  test_and_coverage:
+  compilation:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
